@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <title>Login - Boxer Game</title>
+    <script src="js/head_load.js"></script>
+    <script src="js/loginajax.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-default navbar-tall navbar-full" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Boxer Game</a>
+            </div>
+            <a class="navbar-brand pull-right text-primary" href="#">Login</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-4 col-md-4">
+                <form class="form-login well" action="login" method="post">
+                    <h4>Welcome back.</h4>
+                    <div id="alert" style="display: none;" class="alert alert-info alert-dismissible fade in" role="alert">
+                        <button type="button" class="close" onclick="$(this).parent().hide('normal')" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <strong></strong>
+                    </div>
+                    <input type="text" id="userName" class="form-control chat-input" placeholder="username" />
+                    </br>
+                    <input type="password" id="userPassword" class="form-control chat-input" placeholder="password" />
+                    </br>
+                    <div class="wrapper">
+                        <span class="group-btn">
+                            <!--<span class="pull-right">-->
+                            <button id="btn-login" class="btn btn-primary">login <i class="fa fa-sign-in"></i></button>
+                            <a href="register.jsp" class="btn btn-primary">register <i class="fa fa-sign-in"></i></a>
+                            <!--</span>-->
+                        </span>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

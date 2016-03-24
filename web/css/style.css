@@ -1,0 +1,25 @@
+#boxer-container{
+    display: inline-block;
+}
+.boxer-active {
+    background-color: #c0a16b !important;
+}
+.boxer-item{
+    height: 4em;
+    width: 4em;
+    background-color: #1b6d85;
+    float: left;
+    margin: .05em;
+    border-radius: .4em;
+    text-align: center;
+    vertical-align: middle;
+    /*box-shadow: 0 0 10px gray;*/
+}
+.boxer-click{
+    cursor: pointer;
+}
+.boxer-click:hover{
+    transition: .3s transform;
+    box-shadow: 0 0 10px gray;
+}
+

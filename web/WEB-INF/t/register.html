@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register - Boxer Game</title>
+    <script src="js/head_load.js"></script>
+    <script src="js/regajax.js"></script>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-default navbar-tall navbar-full" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Boxer Game</a>
+        </div>
+        <a class="navbar-brand pull-right text-primary" href="#">Register</a>
+    </nav>
+
+
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-4 col-md-4">
+            <div class="form-login well">
+                <h4>Thanks.</h4>
+                <div id="alert" style="display: none;" class="alert alert-info alert-dismissible fade in" role="alert">
+                    <button type="button" class="close" onclick="$(this).parent().hide('normal')" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <strong></strong>
+                </div>
+                <input type="text" id="userName" class="form-control chat-input" placeholder="username" />
+                </br>
+                <input type="password" id="userPassword" class="form-control chat-input" placeholder="password" />
+                </br>
+                <input type="password" id="userPassword2" class="form-control chat-input" placeholder="password again" />
+                </br>
+                <div class="wrapper">
+                        <span class="group-btn">
+                            <!--<span class="pull-right">-->
+                            <button href="#" id="btn-register" class="btn btn-primary">register <i class="fa fa-sign-in"></i></button>
+                            <a href="login.jsp" class="btn btn-primary">login <i class="fa fa-sign-in"></i></a>
+                            <!--</span>-->
+                        </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
