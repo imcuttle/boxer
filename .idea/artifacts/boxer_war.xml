@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="boxer:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/boxer_war</output-path>
+    <root id="archive" name="boxer_war.war">
+      <element id="artifact" artifact-name="boxer:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

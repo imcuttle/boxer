@@ -18,15 +18,19 @@ public class DataBase {
 
     protected Connection conn;
     protected Connection getConnection(){
-        if(conn==null){
-            try {
-                Class.forName(DRIVER);
-                conn = DriverManager.getConnection(URL,USER,PWD);
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
-            } catch (SQLException e) {
-                e.printStackTrace();
+        try {
+            if(conn==null||conn.isClosed()){
+                try {
+                    Class.forName(DRIVER);
+                    conn = DriverManager.getConnection(URL,USER,PWD);
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
             }
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
         return conn;
     }

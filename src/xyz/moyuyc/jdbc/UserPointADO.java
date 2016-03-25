@@ -75,7 +75,7 @@ public class UserPointADO extends DataBase {
         PreparedStatement ps = null;
         UserPoints userPoints = new UserPoints(new ArrayList<>());
         try {
-            ps = conn.prepareStatement("SELECT * FROM " + TABLE_POINT+ " ORDER BY point DESC,step DESC limit ?;");
+            ps = conn.prepareStatement("SELECT * FROM " + TABLE_POINT+ " ORDER BY point DESC,step limit ?;");
             ps.setInt(1, num);
             ResultSet rs = ps.executeQuery();
             while (rs.next()){
